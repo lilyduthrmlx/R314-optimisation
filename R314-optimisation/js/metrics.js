@@ -138,13 +138,13 @@
     $('#m-req').textContent = String(state.totalRequests||'-');
     $('#m-bytes').textContent = state.totalBytes ? fmtKB(state.totalBytes) : '-';
 
-    // Expose pour comparaison avant/après
-    window.__metrics = {
-      fcp: state.fcp, lcp: state.lcp, cls: state.cls,
-      tbtApprox: state.totalBlockingTime,
-      totalRequests: state.totalRequests,
-      totalBytes: state.totalBytes,
-      navigation: state.nav
+    // // Expose pour comparaison avant/après
+    // window.__metrics = {
+    //   fcp: state.fcp, lcp: state.lcp, cls: state.cls,
+    //   tbtApprox: state.totalBlockingTime,
+    //   totalRequests: state.totalRequests,
+    //   totalBytes: state.totalBytes,
+    //   navigation: state.nav
     };
   }
 
